@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChessWindow</class>
+ <widget class="QWidget" name="ChessWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Шахматы 2</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>1343</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="error_label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>590</y>
+      <width>441</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 20pt &quot;Times New Roman&quot;; color: rgb(255, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>640</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string> Превращение пешки:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pawn_recruit_choose">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>690</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_to_menu_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>730</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: orange;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>К главному меню</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_game_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>630</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: red;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 13pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Начать новую игру</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
