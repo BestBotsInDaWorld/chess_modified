@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Конструктор поля</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>871</width>
+     <height>951</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="save_button">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>630</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: blue;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Сохранить разметку</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Добавляемая фигура:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>730</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Выбрать фигуру:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l_piece_selection">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Введите название файла:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="file_edit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: black;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="save_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>710</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Загрузить имеющийся файл:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="existing_files">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: black;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="load_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: blue;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Загрузить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_to_menu_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>840</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: orange;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>К главному меню</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

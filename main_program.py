@@ -4,7 +4,8 @@ from constructor import *
 from settings import *
 from soundpad import *
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtWidgets import QMainWindow, QMessageBox
+
 
 def except_hook(cls, exception, traceback):
     sys.__excepthook__(cls, exception, traceback)
@@ -15,7 +16,7 @@ class MainMenu(QMainWindow):
         super().__init__()
         uic.loadUi("main_menu.ui", self)
         self.initUI()
-        play_sound("funny", param=1)
+        play_sound("funny", 1)
 
     def initUI(self):
         self.bg.setPixmap(QPixmap(IMAGE_DIR + 'cool_chess.jpg'))
@@ -39,6 +40,7 @@ class MainMenu(QMainWindow):
 
     def game_start(self):
         self.chess_game = Chess()
+        update_abilities()
         self.chess_game.show()
         self.chess_game.back_to_menu_btn.clicked.connect(self.show)
         self.chess_game.new_game_btn.clicked.connect(self.game_start)
@@ -56,7 +58,12 @@ class MainMenu(QMainWindow):
         self.hide()
 
     def game_exit(self):
-        self.close()
+        valid = QMessageBox.question(
+            self, "", "Вы действительно хотите выйти?",
+            QMessageBox.Yes, QMessageBox.No)
+        if valid == QMessageBox.Yes:
+            self.close()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QWidget" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>563</width>
+    <height>897</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Настройки игры</string>
+  </property>
+  <widget class="QRadioButton" name="abilities_button_yes">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 12pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Да</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="abilities_button_no">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>70</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 12pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Нет</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="existing_files">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+color: black;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 12pt &quot;Times New Roman&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>130</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 12pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Выбор карты:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: black;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: italic 12pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Использовать способности?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_to_menu_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>820</y>
+     <width>200</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: orange;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 14pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>К главному меню</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="apply_btn">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>820</y>
+     <width>200</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;
+color: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+padding: 10px;
+font: bold 16pt &quot;Times New Roman&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Подтвердить</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

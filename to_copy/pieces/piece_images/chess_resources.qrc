@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>exit.png</file>
+    <file>crown.png</file>
+    <file>hammer.png</file>
+    <file>horse.png</file>
+  </qresource>
+  <qresource prefix="Ok"/>
+</RCC>

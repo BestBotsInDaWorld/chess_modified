@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QWidget" name="Dialog">
+ <class>settings_window</class>
+ <widget class="QWidget" name="settings_window">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>563</width>
-    <height>897</height>
+    <width>570</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -140,7 +140,7 @@ font: bold 14pt &quot;Times New Roman&quot;;</string>
   <widget class="QPushButton" name="apply_btn">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>360</x>
      <y>820</y>
      <width>200</width>
      <height>60</height>
