@@ -16,7 +16,6 @@ class MainMenu(QMainWindow):
         super().__init__()
         uic.loadUi("main_menu.ui", self)
         self.initUI()
-        play_sound("funny", 1)
 
     def initUI(self):
         self.bg.setPixmap(QPixmap(IMAGE_DIR + 'cool_chess.jpg'))
