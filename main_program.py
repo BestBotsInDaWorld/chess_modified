@@ -40,7 +40,6 @@ class MainMenu(QMainWindow):
 
     def game_start(self):
         self.chess_game = Chess()
-        update_abilities()
         self.chess_game.show()
         self.chess_game.back_to_menu_btn.clicked.connect(self.show)
         self.chess_game.new_game_btn.clicked.connect(self.game_start)
